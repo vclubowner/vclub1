@@ -13,9 +13,9 @@ from faker import Faker
 from multiprocessing import Process
 import threading
 stopuser = {}
-token = '6056530940:AAFeOfo41C6X6mqkciHcVpwn7Q80Oc9IBhk'
+token = '6788433246:AAEyjRFC23VnSWHq3qfu4dwJ3E_Qgrk7jt4'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-admin= 5093504107
+admin= 7166322352
 command_usage = {}
 def reset_command_usage():
 	for user_id in command_usage:
@@ -46,7 +46,7 @@ def start(message):
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)
 		if BL == '𝗙𝗥𝗘𝗘':	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
 			random_number = random.randint(1, 92)
 			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -58,9 +58,7 @@ def start(message):
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -73,7 +71,7 @@ def start(message):
 ''',reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		username = message.from_user.first_name
 		random_number = random.randint(1, 92)
@@ -138,7 +136,7 @@ def main(message):
 			with open('data.json', 'w') as json_file:
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/y_ebn_elnegm")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/y_vclub_own8r")
 			keyboard.add(contact_button)
 			random_number = random.randint(1, 92)
 			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -171,7 +169,7 @@ caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 			provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 		except Exception as e:
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
 			random_number = random.randint(1, 92)
 			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -201,7 +199,7 @@ caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 		required_duration = timedelta(hours=0)
 		if current_time - provided_time > required_duration:
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
 			random_number = random.randint(1, 92)
 			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -246,7 +244,7 @@ def menu_callback(call):
 			}
 				for cc in lino:
 					if stopuser[f'{id}']['status'] == 'stop':
-						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @ebn_elnegm')
+						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @vclub_own8r')
 						return
 					try:
 						data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
@@ -303,7 +301,7 @@ def menu_callback(call):
 					bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
 					  text=f'''𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 𝙒𝙝𝙞𝙡𝙚 𝙔𝙤𝙪𝙧 𝘾𝙖𝙧𝙙𝙨 𝘼𝙧𝙚 𝘽𝙚𝙞𝙣𝙜 𝘾𝙝𝙚𝙘𝙠 𝘼𝙩 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 {gate}
-𝘽𝙤𝙩 𝘽𝙮 @ebn_elnegm''', reply_markup=mes)
+𝘽𝙤𝙩 𝘽𝙮 @vclub_own8r''', reply_markup=mes)
 					
 					msg=f'''<b>𝑪𝑯𝑨𝑹𝑮𝑬 ✅
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -316,7 +314,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 					msgc=f'''<b>𝑪𝑪𝑵 ☑️
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -329,7 +327,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 					msgf=f'''<b>𝑰𝑵𝑺𝑼𝑭𝑭𝑰𝑪𝑰𝑬𝑵𝑻 𝑭𝑼𝑵𝑫𝑺 ☑️
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -342,7 +340,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 					if 'Donation Confirmation' in last or 'This page doesn't seem to exist' in last:
 						ch += 1
@@ -361,7 +359,7 @@ Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 		stopuser[f'{id}']['status'] = 'start'
 		bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
-					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @ebn_elnegm')
+					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @vclub_own8r')
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 @bot.callback_query_handler(func=lambda call: call.data == 'br')
@@ -386,7 +384,7 @@ def menu_callback(call):
 			}
 				for cc in lino:
 					if stopuser[f'{id}']['status'] == 'stop':
-						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @ebn_elnegm')
+						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @vclub_own8r')
 						return
 					try:
 						data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
@@ -443,7 +441,7 @@ def menu_callback(call):
 					bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
 					  text=f'''𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 𝙒𝙝𝙞𝙡𝙚 𝙔𝙤𝙪𝙧 𝘾𝙖𝙧𝙙𝙨 𝘼𝙧𝙚 𝘽𝙚𝙞𝙣𝙜 𝘾𝙝𝙚𝙘𝙠 𝘼𝙩 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 {gate}
-𝘽𝙤𝙩 𝘽𝙮 @ebn_elnegm''', reply_markup=mes)
+𝘽𝙤𝙩 𝘽𝙮 @vclub_own8r''', reply_markup=mes)
 					
 					msg=f'''<b>𝘼𝙥𝙥𝙧𝙤𝙫𝙚𝙙 ✅
 			
@@ -455,7 +453,7 @@ def menu_callback(call):
 𝘽𝙞𝙣 ➼ {cc[:6]}
 𝙄𝙨𝙨𝙪𝙚𝙧 ➼ {bank}
 𝙏𝙞𝙢𝙚 ➼ {"{:.1f}".format(execution_time)}
-𝗕𝗼𝘁 𝗕𝘆: @ebn_elnegm</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @vclub_own8r</b>'''
 					if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
 						live += 1
 						bot.send_message(call.from_user.id, msg)
@@ -471,7 +469,7 @@ def menu_callback(call):
 		stopuser[f'{id}']['status'] = 'start'
 		bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
-					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @ebn_elnegm')
+					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @vclub_own8r')
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.au') or message.text.lower().startswith('/au'))
@@ -499,7 +497,7 @@ def respond_to_vbv(message):
 		BL='𝗙𝗥𝗘𝗘'
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -512,9 +510,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -533,7 +529,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
@@ -543,9 +539,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -561,7 +555,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -634,7 +628,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	msgd=f'''<b>𝗗𝗘𝗖𝗟𝗜𝗡𝗘𝗗 ❌
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -647,7 +641,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
@@ -678,7 +672,7 @@ def respond_to_vbv(message):
 		BL='𝗙𝗥𝗘𝗘'
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -691,9 +685,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -712,7 +704,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -725,9 +717,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -743,7 +733,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -816,7 +806,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	msgd=f'''<b>𝗗𝗘𝗖𝗟𝗜𝗡𝗘𝗗 ❌
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -829,7 +819,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
@@ -860,7 +850,7 @@ def respond_to_vbv(message):
 		BL='𝗙𝗥𝗘𝗘'
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -873,9 +863,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -894,7 +882,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -907,9 +895,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -925,7 +911,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -999,7 +985,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	msg=f'''<b>𝑪𝑯𝑨𝑹𝑮𝑬 ✅
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -1012,7 +998,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	msgc=f'''<b>𝑪𝑪𝑵 ☑️
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -1025,7 +1011,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	msgf=f'''<b>𝑰𝑵𝑺𝑼𝑭𝑭𝑰𝑪𝑰𝑬𝑵𝑻 𝑭𝑼𝑵𝑫𝑺 ☑️
 			- - - - - - - - - - - - - - - - - - - - - - -
@@ -1038,7 +1024,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if 'success' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
@@ -1140,7 +1126,7 @@ def respond_to_vbv(message):
 			json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -1153,9 +1139,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -1174,7 +1158,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -1187,9 +1171,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 950𝗘𝗚
+𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
 1 𝗪𝗘𝗘𝗞 » 10$ 
@@ -1205,7 +1187,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/ebn_elnegm")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		random_number = random.randint(1, 92)
 		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
@@ -1272,7 +1254,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	msgd=f'''<b>𝗥𝗘𝗝𝗘𝗖𝗧𝗘𝗗 ❌
 - - - - - - - - - - - - - - - - - - - - - - -
@@ -1285,7 +1267,7 @@ Bin Info -> {card_type} - {brand}
 Bank -> {bank}
 Counrty -> {country} - {country_flag} 
 - - - - - - - - - - - - - - - - - - - - - - -
-Dev : @ebn_elnegm
+Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if 'Authenticate Attempt Successful' in last or 'Authenticate Successful' in last or 'authenticate_successful' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
