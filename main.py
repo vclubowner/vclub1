@@ -13,7 +13,7 @@ from faker import Faker
 from multiprocessing import Process
 import threading
 stopuser = {}
-token = '6788433246:AAEPb6quvjHiEqFGJeecHNhSVqpxFapezUA'
+token = '6788433246:AAEyjRFC23VnSWHq3qfu4dwJ3E_Qgrk7jt4'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 admin= 7166322352
 command_usage = {}
@@ -1073,7 +1073,7 @@ def start(message):
 			with open('data.json', 'r') as json_file:
 				existing_data = json.load(json_file)
 			characters = string.ascii_uppercase + string.digits
-			pas ='VCLUB-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))
+			pas ='EBNELNEGM-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))
 			current_time = datetime.now()
 			ig = current_time + timedelta(hours=h)
 			plan='𝗩𝗜𝗣'
