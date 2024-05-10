@@ -13,7 +13,7 @@ from faker import Faker
 from multiprocessing import Process
 import threading
 stopuser = {}
-token = '6788433246:AAEyjRFC23VnSWHq3qfu4dwJ3E_Qgrk7jt4'
+token = '6926035437:AAFpWj55rHY0famfJPUocjTswCE9wBYIaRU'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 admin= 7166322352
 command_usage = {}
@@ -48,34 +48,35 @@ def start(message):
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
-			random_number = random.randint(1, 92)
-			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-			bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
-𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
-𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+			random_number = random.randint(33, 82)
+			photo_url = f'https://t.me/bkddgfsa/{random_number}'
+			bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
+𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
+𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
 
-𝗧𝗛𝗘 𝗕𝗢𝗧'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+𝑻𝑯𝑬 𝑩𝑶𝑻'𝑺 𝑱𝑶𝑩 𝑰𝑺 𝑻𝑶 𝑪𝑯𝑬𝑪𝑲 𝑪𝑨𝑹𝑫𝑺
 
-𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+𝑩𝑶𝑻 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝑷𝑹𝑰𝑪𝑬𝑺:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
-━━━━━━━━━━━━
-𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
-━━━━━━━━━━━━
+𝑬𝑮𝒀𝑷𝑻 
+1 𝑾𝑬𝑬𝑲 > 300𝑬𝑮
+1 𝑴𝑶𝑵𝑻𝑯 > 1000𝑬𝑮
 
-𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+𝑾𝑶𝑹𝑳𝑫𝑾𝑰𝑫𝑬 ➜  𝑼𝑺𝑫𝑻 
+1 𝑾𝑬𝑬𝑲 ➜  8$ 
+1 𝑴𝑶𝑵𝑻𝑯 ➜  20$
 
-𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
-''',reply_markup=keyboard)
+𝑪𝑳𝑰𝑪𝑲 /cmds 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
+
+𝒀𝑶𝑼𝑹 𝑷𝑳𝑨𝑵 𝑵𝑶𝑾 {BL}</b>
+	''',reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
 		username = message.from_user.first_name
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
+		random_number = random.randint(33, 82)
+		photo_url = f'https://t.me/bkddgfsa/{random_number}'
 		bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption='''𝘾𝙡𝙞𝙘𝙠 /cmds 𝙏𝙤 𝙑𝙞𝙚𝙬 𝙏𝙝𝙚 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙊𝙧 𝙎𝙚𝙣𝙙 𝙏𝙝𝙚 𝙁𝙞𝙡𝙚 𝘼𝙣𝙙 𝙄 𝙒𝙞𝙡𝙡 𝘾𝙝𝙚𝙘𝙠 𝙄𝙩''',reply_markup=keyboard)
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
@@ -91,10 +92,7 @@ def start(message):
 	keyboard = types.InlineKeyboardMarkup()
 	contact_button = types.InlineKeyboardButton(text=f"✨ {BL}  ✨",callback_data='plan')
 	keyboard.add(contact_button)
-	random_number = random.randint(1, 92)
-	photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-	bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b> 
+	bot.send_message(chat_id=message.chat.id, text=f'''<b> 
 𝗧𝗛𝗘𝗦𝗘 𝗔𝗥𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧'𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 
 ━━━━━━━━━━━━
 𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗔𝗨𝗧𝗛 > <code>/chk number|mm|yy|cvc</code>
@@ -136,12 +134,9 @@ def main(message):
 			with open('data.json', 'w') as json_file:
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/y_vclub_own8r")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
-			random_number = random.randint(1, 92)
-			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-			bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
+			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
 𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
 
@@ -151,11 +146,11 @@ caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
  
 𝑬𝑮𝒀𝑷𝑻 
 1 𝑾𝑬𝑬𝑲 > 300𝑬𝑮
-1 𝑴𝑶𝑵𝑻𝑯 > 950𝑬𝑮
+1 𝑴𝑶𝑵𝑻𝑯 > 1000𝑬𝑮
 
 𝑾𝑶𝑹𝑳𝑫𝑾𝑰𝑫𝑬 ➜  𝑼𝑺𝑫𝑻 
 1 𝑾𝑬𝑬𝑲 ➜  8
-1 𝑴𝑶𝑵𝑻𝑯 ➜  30
+1 𝑴𝑶𝑵𝑻𝑯 ➜  20
 
 𝑪𝑳𝑰𝑪𝑲 /𝑪𝑴𝑫𝑺 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
 
@@ -171,10 +166,7 @@ caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
-			random_number = random.randint(1, 92)
-			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-			bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
+			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
 𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
 
@@ -184,11 +176,11 @@ caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
  
 𝑬𝑮𝒀𝑷𝑻 
 1 𝑾𝑬𝑬𝑲 > 300𝑬𝑮
-1 𝑴𝑶𝑵𝑻𝑯 > 950𝑬𝑮
+1 𝑴𝑶𝑵𝑻𝑯 > 1000𝑬𝑮
 
 𝑾𝑶𝑹𝑳𝑫𝑾𝑰𝑫𝑬 ➜  𝑼𝑺𝑫𝑻 
 1 𝑾𝑬𝑬𝑲 ➜  8 
-1 𝑴𝑶𝑵𝑻𝑯 ➜  30
+1 𝑴𝑶𝑵𝑻𝑯 ➜  20
 
 𝑪𝑳𝑰𝑪𝑲 /𝑪𝑴𝑫𝑺 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
 
@@ -201,10 +193,7 @@ caption='''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 			keyboard.add(contact_button)
-			random_number = random.randint(1, 92)
-			photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-			bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
+			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 		''',reply_markup=keyboard)
 			with open('data.json', 'r') as file:
 				json_data = json.load(file)
@@ -284,7 +273,7 @@ def menu_callback(call):
 						last = "ERROR"
 					if 'risk' in last:
 						last='declined'
-					elif 'Donation Confirmation' in last or 'This page doesn t seem to exist' in last:
+					elif 'Duplicate' in last:
 						last='Approved'
 					mes = types.InlineKeyboardMarkup(row_width=1)
 					cm1 = types.InlineKeyboardButton(f"• {cc} •", callback_data='u8')
@@ -342,13 +331,13 @@ Counrty -> {country} - {country_flag}
 - - - - - - - - - - - - - - - - - - - - - - -
 Dev : @vclub_own8r
 Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
-					if 'Donation Confirmation' in last or 'This page doesnt seem to exist' in last:
+					if 'success' in last:
 						ch += 1
 						bot.send_message(call.from_user.id, msg)
 					elif "funds" in last:
 						bot.send_message(call.from_user.id, msgf)
 						live+=1
-					elif "card's security" in last or 'Card Issuer Declined CVV' in last or '' in last or 'cvc was incorrect' in last:
+					elif "card's security" in last:
 						ccnn+=1
 						bot.send_message(call.from_user.id, msgc)
 					else:
@@ -499,10 +488,7 @@ def respond_to_vbv(message):
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -510,11 +496,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -539,11 +527,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -557,10 +547,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
@@ -575,8 +562,8 @@ caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 �
 			}
 	if command_usage[idt]['last_time'] is not None:
 		time_diff = (current_time - command_usage[idt]['last_time']).seconds
-		if time_diff < 3:
-			bot.reply_to(message, f"<b>Try again after {3-time_diff} seconds.</b>",parse_mode="HTML")
+		if time_diff < 30:
+			bot.reply_to(message, f"<b>Try again after {30-time_diff} seconds.</b>",parse_mode="HTML")
 			return	
 	ko = (bot.reply_to(message, "𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗬𝗢𝗨𝗥 𝗖𝗔𝗥𝗗𝗦...⌛").message_id)
 	try:
@@ -674,10 +661,7 @@ def respond_to_vbv(message):
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -685,11 +669,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -706,10 +692,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -717,11 +700,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -735,10 +720,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
@@ -753,8 +735,8 @@ caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 �
 			}
 	if command_usage[idt]['last_time'] is not None:
 		time_diff = (current_time - command_usage[idt]['last_time']).seconds
-		if time_diff < 3:
-			bot.reply_to(message, f"<b>Try again after {3-time_diff} seconds.</b>",parse_mode="HTML")
+		if time_diff < 30:
+			bot.reply_to(message, f"<b>Try again after {30-time_diff} seconds.</b>",parse_mode="HTML")
 			return	
 	ko = (bot.reply_to(message, "𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗬𝗢𝗨𝗥 𝗖𝗔𝗥𝗗𝗦...⌛").message_id)
 	try:
@@ -852,10 +834,7 @@ def respond_to_vbv(message):
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -863,11 +842,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -884,10 +865,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -895,11 +873,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -913,10 +893,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
@@ -931,8 +908,8 @@ caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 �
 			}
 	if command_usage[idt]['last_time'] is not None:
 		time_diff = (current_time - command_usage[idt]['last_time']).seconds
-		if time_diff < 3:
-			bot.reply_to(message, f"<b>Try again after {3-time_diff} seconds.</b>",parse_mode="HTML")
+		if time_diff < 30:
+			bot.reply_to(message, f"<b>Try again after {30-time_diff} seconds.</b>",parse_mode="HTML")
 			return	
 	ko = (bot.reply_to(message, "𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗬𝗢𝗨𝗥 𝗖𝗔𝗥𝗗𝗦...⌛").message_id)
 	try:
@@ -1030,7 +1007,7 @@ Taken {"{:.1f}".format(execution_time)} secounds .</b>'''
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
 	elif "funds" in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgf)
-	elif "Card Issuer Declined CVV" in last:
+	elif "card's security" in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgc)
 	else:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgd)
@@ -1053,7 +1030,7 @@ def respond_to_vbv(message):
 			del data[re]
 			with open('data.json', 'w') as json_file:
 				json.dump(data, json_file, ensure_ascii=False, indent=4)
-			msg=f'''<b>𝗘𝗕𝗡𝗘𝗟𝗡𝗘𝗚𝗠 𝗩𝗜𝗣 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘𝗗 ✅
+			msg=f'''<b>𝗙𝗟𝗔𝗦𝗛 𝗩𝗜𝗣 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘𝗗 ✅
 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝗘𝗫𝗣𝗜𝗥𝗘𝗦 𝗜𝗡 ➜ {timer}
 𝗧𝗬𝗣 ➜ {typ}</b>'''
 			bot.reply_to(message,msg,parse_mode="HTML")
@@ -1073,7 +1050,7 @@ def start(message):
 			with open('data.json', 'r') as json_file:
 				existing_data = json.load(json_file)
 			characters = string.ascii_uppercase + string.digits
-			pas ='EBNELNEGM-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))
+			pas ='FLASH-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))
 			current_time = datetime.now()
 			ig = current_time + timedelta(hours=h)
 			plan='𝗩𝗜𝗣'
@@ -1128,10 +1105,7 @@ def respond_to_vbv(message):
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -1139,11 +1113,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -1160,10 +1136,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
 𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
 
@@ -1171,11 +1144,13 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 
 𝗕𝗢𝗧 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
  
-𝙓ًَِِ 𝙐ًٍَََِِ 𝙎ًََٕٓ 𝘼 𓂀
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 300𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 1000𝗘𝗚
 ━━━━━━━━━━━━
 𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 10$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 30$
+1 𝗪𝗘𝗘𝗞 » 8$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 20$
 ━━━━━━━━━━━━
 
 𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
@@ -1189,10 +1164,7 @@ caption='''<b>𝗛𝗘𝗟𝗟𝗢 {name}
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/vclub_own8r")
 		keyboard.add(contact_button)
-		random_number = random.randint(1, 92)
-		photo_url = f'https://t.me/EBNELNEGM10/{random_number}'
-		bot.send_photo(chat_id=message.chat.id, photo=photo_url,
-caption='''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗕𝗢𝗧 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
